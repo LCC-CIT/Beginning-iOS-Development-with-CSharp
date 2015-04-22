@@ -12,7 +12,7 @@ using UIKit;
 namespace LayoutDemo
 {
 	[Register ("OrientationDemoViewController")]
-	partial class OrientationDemoViewController
+	partial class LayoutDemoViewController
 	{
 		void ReleaseDesignerOutlets ()
 		{

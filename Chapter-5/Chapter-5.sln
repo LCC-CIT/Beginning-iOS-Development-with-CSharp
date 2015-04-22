@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayoutDemo", "OrientationDemo\LayoutDemo.csproj", "{84E87425-03B3-4369-A950-8D82F64C4797}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayoutDemo", "LayoutDemo\LayoutDemo.csproj", "{84E87425-03B3-4369-A950-8D82F64C4797}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

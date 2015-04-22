@@ -4,11 +4,15 @@ using System.Drawing;
 using Foundation;
 using UIKit;
 
-namespace Orientation
+namespace LayoutDemo
 {
-	public partial class OrientationViewController : UIViewController
+	public partial class LayoutDemoViewController : UIViewController
 	{
-		public OrientationViewController (IntPtr handle) : base (handle)
+		static bool UserInterfaceIdiomIsPhone {
+			get { return UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Phone; }
+		}
+
+		public LayoutDemoViewController (IntPtr handle) : base (handle)
 		{
 		}
 

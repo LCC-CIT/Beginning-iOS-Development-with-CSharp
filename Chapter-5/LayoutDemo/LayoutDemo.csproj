@@ -127,10 +127,10 @@ Adapted by Brian Bird</Description>
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="OrientationDemoViewController.designer.cs">
+    <Compile Include="LayoutDemoViewController.cs" />
+    <Compile Include="LayoutDemoViewController.designer.cs">
       <DependentUpon>LayoutDemoViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="LayoutDemoViewController.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
