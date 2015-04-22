@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayoutDemo", "LayoutDemo\LayoutDemo.csproj", "{84E87425-03B3-4369-A950-8D82F64C4797}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestructureDemo", "RestructureDemo\RestructureDemo.csproj", "{3DC5973A-9699-44FB-B96D-164F2DA8B403}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -13,6 +15,18 @@ Global
 		AppStore|iPhone = AppStore|iPhone
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DC5973A-9699-44FB-B96D-164F2DA8B403}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{3DC5973A-9699-44FB-B96D-164F2DA8B403}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{3DC5973A-9699-44FB-B96D-164F2DA8B403}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{3DC5973A-9699-44FB-B96D-164F2DA8B403}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{3DC5973A-9699-44FB-B96D-164F2DA8B403}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{3DC5973A-9699-44FB-B96D-164F2DA8B403}.Debug|iPhone.Build.0 = Debug|iPhone
+		{3DC5973A-9699-44FB-B96D-164F2DA8B403}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{3DC5973A-9699-44FB-B96D-164F2DA8B403}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{3DC5973A-9699-44FB-B96D-164F2DA8B403}.Release|iPhone.ActiveCfg = Release|iPhone
+		{3DC5973A-9699-44FB-B96D-164F2DA8B403}.Release|iPhone.Build.0 = Release|iPhone
+		{3DC5973A-9699-44FB-B96D-164F2DA8B403}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{3DC5973A-9699-44FB-B96D-164F2DA8B403}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{84E87425-03B3-4369-A950-8D82F64C4797}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
 		{84E87425-03B3-4369-A950-8D82F64C4797}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
 		{84E87425-03B3-4369-A950-8D82F64C4797}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
