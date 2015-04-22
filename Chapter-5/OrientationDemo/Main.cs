@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace Orientation
+namespace LayoutDemo
 {
 	public class Application
 	{

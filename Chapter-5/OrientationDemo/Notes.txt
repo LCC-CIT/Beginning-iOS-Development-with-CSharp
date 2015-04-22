@@ -1,0 +1,8 @@
+﻿This project was adapted from the section titles Designing an Interface Using Constraints, 
+starting on page 144 of Beginning iPhone Development with Swift. 
+
+1. Set default constraints on the four corner labels
+2. Add the two center-side labels
+3. Add default constraints to the side labels, but remove the vertical constraints
+4. Add center-Y constraints to the side labels
+5. 

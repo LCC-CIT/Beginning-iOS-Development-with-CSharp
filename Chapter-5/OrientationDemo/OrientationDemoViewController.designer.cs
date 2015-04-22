@@ -9,10 +9,10 @@ using System;
 using System.CodeDom.Compiler;
 using UIKit;
 
-namespace Orientation
+namespace LayoutDemo
 {
-	[Register ("OrientationViewController")]
-	partial class OrientationViewController
+	[Register ("OrientationDemoViewController")]
+	partial class OrientationDemoViewController
 	{
 		void ReleaseDesignerOutlets ()
 		{

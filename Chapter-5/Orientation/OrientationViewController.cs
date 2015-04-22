@@ -8,10 +8,6 @@ namespace Orientation
 {
 	public partial class OrientationViewController : UIViewController
 	{
-		static bool UserInterfaceIdiomIsPhone {
-			get { return UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Phone; }
-		}
-
 		public OrientationViewController (IntPtr handle) : base (handle)
 		{
 		}
@@ -23,13 +19,6 @@ namespace Orientation
 			
 			// Release any cached data, images, etc that aren't in use.
 		}
-
-		// Restrict orientation to portrait or landscape-left
-		 public override UIInterfaceOrientationMask GetSupportedInterfaceOrientations ()
-		{
-			return UIInterfaceOrientationMask.Portrait | UIInterfaceOrientationMask.LandscapeLeft;
-		}
-
 
 		#region View lifecycle
 
