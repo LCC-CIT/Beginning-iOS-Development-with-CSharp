@@ -17,55 +17,125 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7" misplaced="YES">
-                                <rect key="frame" x="20" y="41" width="560" height="398"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7">
+                                <rect key="frame" x="20" y="41" width="560" height="385"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="50"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="50"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="30" y="38" width="385" height="342"/>
-                                    <mask key="constraints">
-                                        <include reference="50"/>
-                                    </mask>
+                                <variation key="heightClass=compact">
+                                    <rect key="frame" x="20" y="41" width="423" height="309"/>
                                 </variation>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="56" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="30" y="468" width="93" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="56" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="30" y="461" width="93" height="30"/>
                                 <state key="normal" title="Action One">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=compact">
+                                    <rect key="frame" x="487" y="66" width="93" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="116"/>
+                                        <include reference="115"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="115" firstItem="56" firstAttribute="width" constant="93"/>
+                                    <constraint id="116" firstItem="56" firstAttribute="height" constant="30"/>
+                                </constraints>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="57" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="57" translatesAutoresizingMaskIntoConstraints="NO">
                                 <rect key="frame" x="30" y="526" width="93" height="30"/>
                                 <state key="normal" title="Action Two">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=compact">
+                                    <rect key="frame" x="487" y="137" width="93" height="30"/>
+                                </variation>
+                                <constraints>
+                                    <constraint id="69" firstAttribute="width" constant="93"/>
+                                    <constraint id="84" firstItem="57" firstAttribute="height" constant="30"/>
+                                </constraints>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="58" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="58" translatesAutoresizingMaskIntoConstraints="NO">
                                 <rect key="frame" x="487" y="526" width="93" height="30"/>
                                 <state key="normal" title="Action Four">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=compact">
+                                    <rect key="frame" x="487" y="326" width="93" height="30"/>
+                                </variation>
+                                <constraints>
+                                    <constraint id="75" firstAttribute="width" constant="93"/>
+                                    <constraint id="86" firstItem="58" firstAttribute="height" constant="30"/>
+                                </constraints>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="59" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="59" translatesAutoresizingMaskIntoConstraints="NO">
                                 <rect key="frame" x="487" y="470" width="93" height="30"/>
                                 <state key="normal" title="Action Three">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=compact">
+                                    <rect key="frame" x="487" y="270" width="93" height="30"/>
+                                </variation>
+                                <constraints>
+                                    <constraint id="72" firstAttribute="width" constant="93"/>
+                                    <constraint id="85" firstItem="59" firstAttribute="height" constant="30"/>
+                                </constraints>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="7" secondAttribute="trailing" constant="20" id="42"/>
-                            <constraint firstItem="7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="41" id="43"/>
                             <constraint firstItem="7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="44"/>
+                            <constraint id="70" constant="20" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="59" secondAttribute="trailing"/>
+                            <constraint id="71" constant="100" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="59" secondAttribute="bottom"/>
+                            <constraint id="73" constant="20" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="58" secondAttribute="trailing"/>
+                            <constraint id="74" constant="44" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="58" secondAttribute="bottom"/>
+                            <constraint firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="7" secondAttribute="bottom" constant="50" id="87"/>
+                            <constraint firstItem="7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="41" id="89"/>
+                            <constraint id="101" constant="30" firstItem="57" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading"/>
+                            <constraint id="102" constant="44" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="57" secondAttribute="bottom"/>
+                            <constraint id="108" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="56" secondAttribute="trailing" constant="20"/>
+                            <constraint id="109" constant="66" firstItem="56" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top"/>
+                            <constraint firstItem="56" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="110"/>
+                            <constraint firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="56" secondAttribute="bottom" constant="109" id="114"/>
+                            <constraint firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="57" secondAttribute="trailing" constant="20" id="117"/>
+                            <constraint firstItem="57" firstAttribute="top" secondItem="l8l-RB-kAs" secondAttribute="bottom" constant="117" id="118"/>
+                            <constraint firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="7" secondAttribute="trailing" constant="157" id="119"/>
+                            <constraint firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="7" secondAttribute="bottom" constant="174" id="120"/>
                         </constraints>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="42"/>
+                                <exclude reference="43"/>
+                                <include reference="44"/>
+                                <include reference="87"/>
+                                <include reference="89"/>
+                                <include reference="91"/>
+                                <include reference="92"/>
+                                <include reference="93"/>
+                                <include reference="94"/>
+                                <include reference="98"/>
+                                <exclude reference="101"/>
+                                <exclude reference="102"/>
+                                <include reference="108"/>
+                                <include reference="109"/>
+                                <exclude reference="110"/>
+                                <exclude reference="114"/>
+                                <include reference="117"/>
+                                <include reference="118"/>
+                                <include reference="119"/>
+                                <exclude reference="120"/>
+                            </mask>
+                        </variation>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="87"/>
+                                <exclude reference="109"/>
+                                <exclude reference="108"/>
+                                <exclude reference="117"/>
+                                <exclude reference="118"/>
+                                <exclude reference="119"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

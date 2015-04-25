@@ -102,6 +102,7 @@
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
+    <None Include="LayoutNotes.txt" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />

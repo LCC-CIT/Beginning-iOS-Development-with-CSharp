@@ -1,0 +1,27 @@
+﻿General size class to device mapping
+
+wCompact hCompact:  
+All iPhones except 6+ in landscape
+
+wCompact hRegular:
+All iPhones in portrait.
+
+wRegular hCompact:
+iPhone 6 Plus in landscape.
+
+wRegular hRegular:
+All iPads in both landscape and portrait.
+
+------------------------------------------
+
+This app has the following layouts:
+
+wAny hAny:
+(Base layout)
+All iphones in portrait
+
+wAny hCompact:
+All iPhones in landscape
+
+wRegular hRegular:
+iPad in landscape and portrait
