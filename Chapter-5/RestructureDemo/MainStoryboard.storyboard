@@ -59,8 +59,8 @@
                                 <state key="normal" title="Action Four">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact">
-                                    <rect key="frame" x="487" y="326" width="93" height="30"/>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="490" y="282" width="93" height="30"/>
                                 </variation>
                                 <constraints>
                                     <constraint id="75" firstAttribute="width" constant="93"/>
@@ -72,14 +72,67 @@
                                 <state key="normal" title="Action Three">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact">
-                                    <rect key="frame" x="487" y="270" width="93" height="30"/>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="490" y="214" width="93" height="30"/>
                                 </variation>
                                 <constraints>
                                     <constraint id="72" firstAttribute="width" constant="93"/>
                                     <constraint id="85" firstItem="59" firstAttribute="height" constant="30"/>
                                 </constraints>
                             </button>
+                            <view contentMode="scaleToFill" id="124" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="475" y="53" width="160" height="240"/>
+                                <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="494" y="53" width="61" height="5"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" id="125" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="516" y="73" width="160" height="240"/>
+                                <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="494" y="117" width="61" height="5"/>
+                                </variation>
+                                <subviews/>
+                            </view>
+                            <view contentMode="scaleToFill" id="129" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="530" y="151" width="160" height="240"/>
+                                <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="484" y="414" width="61" height="5"/>
+                                    <mask key="subviews">
+                                        <include reference="126"/>
+                                    </mask>
+                                </variation>
+                                <subviews>
+                                </subviews>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="126"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" id="126" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="536" y="93" width="160" height="240"/>
+                                <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="497" y="192" width="61" height="5"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" id="131" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="516" y="73" width="160" height="240"/>
+                                <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="494" y="263" width="61" height="5"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" id="128" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="536" y="93" width="160" height="240"/>
+                                <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="500" y="327" width="61" height="5"/>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -124,6 +177,18 @@
                                 <include reference="118"/>
                                 <include reference="119"/>
                                 <exclude reference="120"/>
+                                <exclude reference="70"/>
+                                <exclude reference="71"/>
+                                <exclude reference="73"/>
+                                <exclude reference="74"/>
+                            </mask>
+                            <mask key="subviews">
+                                <include reference="124"/>
+                                <include reference="125"/>
+                                <include reference="129"/>
+                                <include reference="126"/>
+                                <include reference="131"/>
+                                <include reference="128"/>
                             </mask>
                         </variation>
                         <variation key="default">
@@ -134,6 +199,14 @@
                                 <exclude reference="117"/>
                                 <exclude reference="118"/>
                                 <exclude reference="119"/>
+                            </mask>
+                            <mask key="subviews">
+                                <exclude reference="124"/>
+                                <exclude reference="125"/>
+                                <exclude reference="129"/>
+                                <exclude reference="126"/>
+                                <exclude reference="131"/>
+                                <exclude reference="128"/>
                             </mask>
                         </variation>
                     </view>
