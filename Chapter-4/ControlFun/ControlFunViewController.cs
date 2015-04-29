@@ -28,6 +28,7 @@ namespace ControlFun
 			
 			// Perform any additional setup after loading the view, typically from a nib.
 			nameField.EditingDidEndOnExit += (sender, e) => {
+				sliderLabel.Text = "OK";
 				((UITextField)sender).ResignFirstResponder();
 			};
 
