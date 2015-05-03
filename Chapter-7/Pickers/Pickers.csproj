@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{16E23B0F-C689-4CA8-8517-EF8F213C7B76}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Pickers</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>Pickers</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>i386</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Calabash">
+      <HintPath>..\packages\Xamarin.TestCloud.Agent.0.14.1\lib\Xamarin.iOS10\Calabash.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\Bar.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\Bar.imageset\bar.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Bar.imageset\bar%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Bar.imageset\bar%403x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\apple.imageset\apple.png" />
+    <ImageAsset Include="Resources\Images.xcassets\apple.imageset\apple%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\apple.imageset\apple%403x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\apple.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\cherry.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\cherry.imageset\cherry.png" />
+    <ImageAsset Include="Resources\Images.xcassets\cherry.imageset\cherry%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\cherry.imageset\cherry%403x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\clockicon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\clockicon.imageset\clockicon.png" />
+    <ImageAsset Include="Resources\Images.xcassets\clockicon.imageset\clockicon%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\clockicon.imageset\clockicon%403x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\crown.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\crown.imageset\crown.png" />
+    <ImageAsset Include="Resources\Images.xcassets\crown.imageset\crown%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\crown.imageset\crown%403x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\dependenticon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\dependenticon.imageset\dependenticon.png" />
+    <ImageAsset Include="Resources\Images.xcassets\dependenticon.imageset\dependenticon%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\dependenticon.imageset\dependenticon%403x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\doubleicon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\doubleicon.imageset\doubleicon.png" />
+    <ImageAsset Include="Resources\Images.xcassets\doubleicon.imageset\doubleicon%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\doubleicon.imageset\doubleicon%403x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\lemon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\lemon.imageset\lemon.png" />
+    <ImageAsset Include="Resources\Images.xcassets\lemon.imageset\lemon%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\lemon.imageset\lemon%403x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\seven.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\seven.imageset\seven.png" />
+    <ImageAsset Include="Resources\Images.xcassets\seven.imageset\seven%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\seven.imageset\seven%403x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\singleicon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\singleicon.imageset\singleicon.png" />
+    <ImageAsset Include="Resources\Images.xcassets\singleicon.imageset\singleicon%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\singleicon.imageset\singleicon%403x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\toolicon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\toolicon.imageset\toolicon.png" />
+    <ImageAsset Include="Resources\Images.xcassets\toolicon.imageset\toolicon%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\toolicon.imageset\toolicon%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+    <InterfaceDefinition Include="Main.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="ViewController.cs" />
+    <Compile Include="ViewController.designer.cs">
+      <DependentUpon>ViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatePickerViewController.cs" />
+    <Compile Include="DatePickerViewController.designer.cs">
+      <DependentUpon>DatePickerViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SingleComponentPickerViewController.cs" />
+    <Compile Include="SingleComponentPickerViewController.designer.cs">
+      <DependentUpon>SingleComponentPickerViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoubleComponentPickerViewController.cs" />
+    <Compile Include="DoubleComponentPickerViewController.designer.cs">
+      <DependentUpon>DoubleComponentPickerViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DependentComponentPickerViewController.cs" />
+    <Compile Include="DependentComponentPickerViewController.designer.cs">
+      <DependentUpon>DependentComponentPickerViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomPickerViewController.cs" />
+    <Compile Include="CustomPickerViewController.designer.cs">
+      <DependentUpon>CustomPickerViewController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Resources\Images.xcassets\cherry.imageset\" />
+    <Folder Include="Resources\Images.xcassets\clockicon.imageset\" />
+    <Folder Include="Resources\Images.xcassets\crown.imageset\" />
+    <Folder Include="Resources\Images.xcassets\dependenticon.imageset\" />
+    <Folder Include="Resources\Images.xcassets\doubleicon.imageset\" />
+    <Folder Include="Resources\Images.xcassets\lemon.imageset\" />
+    <Folder Include="Resources\Images.xcassets\seven.imageset\" />
+    <Folder Include="Resources\Images.xcassets\singleicon.imageset\" />
+    <Folder Include="Resources\Images.xcassets\toolicon.imageset\" />
+  </ItemGroup>
+</Project>
