@@ -6,7 +6,7 @@ namespace Pickers
 {
 	public partial class ViewController : UITabBarController
 	{
-
+		/*
 		UIViewController tab1, tab2, tab3;
 
 		public ViewController ()
@@ -29,6 +29,7 @@ namespace Pickers
 
 			ViewControllers = tabs;
 		}
+		*/
 
 		public ViewController (IntPtr handle) : base (handle)
 		{

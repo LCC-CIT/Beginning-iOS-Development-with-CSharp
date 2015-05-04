@@ -29,12 +29,6 @@ namespace Pickers
 			DatePicker.Date  = date;
 		}
 			
-		/*
-		partial void ButtonPressed  (UIButton sender)
-		{
-			
-		}
-		*/	
 
 		partial void selectButton_TouchUpInside (UIButton sender)
 		{
@@ -52,7 +46,8 @@ namespace Pickers
 				handler: null);
 
 			alert.AddAction(action);
-			this.PresentViewController(alert, true, null);		}
+			this.PresentViewController(alert, true, null);		
+		}
 	}
 }
 

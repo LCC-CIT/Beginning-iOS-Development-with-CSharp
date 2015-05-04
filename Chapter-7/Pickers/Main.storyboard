@@ -29,7 +29,7 @@
         <!--Date-->
         <scene sceneID="15">
             <objects>
-                <viewController id="10" customClass="DatePickerViewController" sceneMemberID="viewController" storyboardIdentifier="DatePickerViewController">
+                <viewController id="10" customClass="DatePickerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3"/>
                         <viewControllerLayoutGuide type="bottom" id="4"/>
