@@ -26,6 +26,11 @@ namespace Pickers
 			
 			// Perform any additional setup after loading the view, typically from a nib.
 		}
+
+		partial void testButton_TouchUpInside (UIButton sender)
+		{
+			testLabel.Text = "It worked!";
+		}
 	}
 }
 

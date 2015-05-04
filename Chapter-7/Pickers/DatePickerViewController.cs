@@ -8,7 +8,7 @@ namespace Pickers
 {
 	public partial class DatePickerViewController : UIViewController
 	{
-		public DatePickerViewController () : base ("DatePickerViewController", null)
+		public DatePickerViewController (IntPtr handle) : base (handle)
 		{
 		}
 
@@ -22,18 +22,20 @@ namespace Pickers
 
 		public override void ViewDidLoad ()
 		{
-			base.ViewDidLoad ();
 			
 			// Perform any additional setup after loading the view, typically from a nib.
 			var date = new NSDate();
 			DatePicker.Date  = date;
+
+			base.ViewDidLoad ();
 		}
 			
 
 		partial void selectButton_TouchUpInside (UIButton sender)
 		{
 			var date = DatePicker.Date;
-			var msg = String.Format("The date and time you selected is {0}", date);
+			var msg = String.Format("The date and time you selected is {0}", "Testing");
+
 
 			var  alert = UIAlertController.Create(
 				title: "Date and Time Selected",
