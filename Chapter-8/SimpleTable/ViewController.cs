@@ -4,8 +4,20 @@ using UIKit;
 
 namespace SimpleTable
 {
-	public partial class ViewController : UIViewController
+	public partial class ViewController : UIViewController, IUITableViewDataSource, IUITableViewDelegate
 	{
+
+		private string[] dwarves = {
+			"Sleepy", "Sneezy", "Bashful", "Happy",
+			"Doc", "Grumpy", "Dopey",
+			"Thorin", "Dorin", "Nori", "Ori",
+			"Balin", "Dwalin", "Fili", "Kili",
+			"Oin", "Gloin", "Bifur", "Bofur",
+			"Bombur"
+		};
+
+		private string simpleTableIdentifier = "SimpleTableIdentifier";
+
 		public ViewController (IntPtr handle) : base (handle)
 		{
 		}
