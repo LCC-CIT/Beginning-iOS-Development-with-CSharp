@@ -11,8 +11,8 @@ using UIKit;
 
 namespace SimpleTable
 {
-	[Register ("ViewController")]
-	partial class ViewController
+	[Register ("SimpleTableViewController")]
+	partial class SimpleTableViewController
 	{
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
