@@ -14,24 +14,8 @@ namespace SimpleTable
 	[Register ("SimpleTableViewController")]
 	partial class SimpleTableViewController
 	{
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UITableViewController dataSource { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UITableViewController @delegate { get; set; }
-
 		void ReleaseDesignerOutlets ()
 		{
-			if (dataSource != null) {
-				dataSource.Dispose ();
-				dataSource = null;
-			}
-			if (@delegate != null) {
-				@delegate.Dispose ();
-				@delegate = null;
-			}
 		}
 	}
 }
