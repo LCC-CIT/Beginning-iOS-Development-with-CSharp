@@ -18,7 +18,7 @@ namespace SimpleTable
 			"Bombur"
 		};
 
-		private string simpleTableIdentifier = "SimpleTableIdentifier";
+		// private string simpleTableIdentifier = "SimpleTableIdentifier";
 
 		public SimpleTableViewController (IntPtr handle) : base (handle)
 		{
@@ -46,7 +46,7 @@ namespace SimpleTable
 	}
 
 
-	/********************* TableViewSource *********************************/
+	/********************* TableViewDataSource class *********************************/
 
 	public class SimpleTableViewDataSource : UITableViewDataSource 
 	{
@@ -68,13 +68,23 @@ namespace SimpleTable
 		{
 			// in a Storyboard, Dequeue will ALWAYS return a cell,
 			var cell = tableView.DequeueReusableCell (cellIdentifier);
-			// now set the properties as normal
+			// now set the text 
 			cell.TextLabel.Text = tableItems[indexPath.Row];
 
-			var image = UIImage.FromFile("Images/star");
-			cell.ImageView.Image = image;
-			var highlightedImage = UIImage.FromFile ("Images/star2");
-			cell.ImageView.HighlightedImage = highlightedImage;
+			// Add images to the cell
+			cell.ImageView.Image = UIImage.FromFile("Images/star");
+			cell.ImageView.HighlightedImage = UIImage.FromFile ("Images/star2");
+
+			// Cell style should be set to "Subtitle" or "RightDetial" in the storyboard
+			// Add detail information
+			const int NUM_DISNEY_DWARVES = 7;
+			if (cell.DetailTextLabel != null) {
+				if (indexPath.Row < NUM_DISNEY_DWARVES) {
+					cell.DetailTextLabel.Text = "Mr Disney";
+				} else {
+					cell.DetailTextLabel.Text = "Mr Tolkien";
+				}
+			}
 
 			return cell;
 		}
