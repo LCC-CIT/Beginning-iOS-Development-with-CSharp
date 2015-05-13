@@ -71,6 +71,11 @@ namespace SimpleTable
 			// now set the properties as normal
 			cell.TextLabel.Text = tableItems[indexPath.Row];
 
+			var image = UIImage.FromFile("Images/star");
+			cell.ImageView.Image = image;
+			var highlightedImage = UIImage.FromFile ("Images/star2");
+			cell.ImageView.HighlightedImage = highlightedImage;
+
 			return cell;
 		}
 
