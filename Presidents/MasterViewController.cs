@@ -68,6 +68,7 @@ namespace Presidents
 		public override void PrepareForSegue (UIStoryboardSegue segue, NSObject sender)
 		{
 			if (segue.Identifier == "showDetail") {
+
 				var indexPath = TableView.IndexPathForSelectedRow;
 				var item = dataSource.Presidents [indexPath.Row];
 				var controller = (DetailViewController)((UINavigationController)segue.DestinationViewController).TopViewController;
@@ -121,11 +122,12 @@ namespace Presidents
 			public override bool CanEditRow (UITableView tableView, NSIndexPath indexPath)
 			{
 				// Return false if you do not want the specified item to be editable.
-				return true;
+				return false;
 			}
 
 			public override void CommitEditingStyle (UITableView tableView, UITableViewCellEditingStyle editingStyle, NSIndexPath indexPath)
 			{
+				/*
 				if (editingStyle == UITableViewCellEditingStyle.Delete) {
 					// Delete the row from the data source.
 					presidents.RemoveAt (indexPath.Row);
@@ -133,6 +135,7 @@ namespace Presidents
 				} else if (editingStyle == UITableViewCellEditingStyle.Insert) {
 					// Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
 				}
+				*/
 			}
 
 			public override void RowSelected (UITableView tableView, NSIndexPath indexPath)
