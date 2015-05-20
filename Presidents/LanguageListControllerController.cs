@@ -8,11 +8,12 @@ namespace Presidents
 {
 	public class LanguageListControllerController : UITableViewController
 	{
+		LanguageListControllerSource tVSource = new LanguageListControllerSource ();
+
 		// iOS has the potential for "retain cycles"
 		// Mono's garbage collector might solve this though - don't know
 		// WeakReference wRef = new WeakReference();   // We might not need this
-		DetailViewController detailViewController;
-		LanguageListControllerSource tVSource = new LanguageListControllerSource ();
+		public DetailViewController DetailViewControllerRef { get; set;}
 
 
 		public LanguageListControllerController () : base (UITableViewStyle.Grouped)
@@ -42,12 +43,7 @@ namespace Presidents
 			base.ViewDidLoad ();
 		}
 
-		public override void RowSelected (UITableView tableView, NSIndexPath indexPath)
-		{
-			detailViewController.LanguageString = tVSource.LanguageNames[indexPath.Row];
 
-			base.RowSelected (tableView, indexPath);
-		}
 	}
 }
 

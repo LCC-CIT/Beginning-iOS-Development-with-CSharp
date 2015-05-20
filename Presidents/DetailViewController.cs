@@ -74,7 +74,27 @@ namespace Presidents
 
 			if(UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Pad)
 			{
-				languageButton = new UIBarButtonItem ("Choose Language", UIBarButtonItemStyle.Plain, (s, e)=>{});
+				LanguageListControllerController languageListController = null;
+
+				languageButton = new UIBarButtonItem ("Choose Language", 
+					UIBarButtonItemStyle.Plain, (s, e)=>
+					{
+						if(languageListController == null)
+						{
+							languageListController = new LanguageListControllerController();
+							languageListController.DetailViewControllerRef = this;
+
+							languagePopoverController = new UIPopoverController(languageListController);
+							languagePopoverController.PresentFromBarButtonItem(languageButton,
+								UIPopoverArrowDirection.Any, true);
+						}
+						else
+						{
+							languagePopoverController.Dismiss(true);
+							languagePopoverController = null;
+						}
+					});
+
 				NavigationItem.RightBarButtonItem = languageButton;
 			}
 

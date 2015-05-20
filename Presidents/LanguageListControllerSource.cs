@@ -44,12 +44,18 @@ namespace Presidents
 			var cell = tableView.DequeueReusableCell (LanguageListControllerCell.Key) as LanguageListControllerCell;
 			if (cell == null)
 				cell = new LanguageListControllerCell ();
-			
-			// TODO: populate the cell with the appropriate data based on the indexPath
+
 			cell.TextLabel.Text = languageNames[indexPath.Row];
 			cell.DetailTextLabel.Text = "DetailsTextLabel";
 			
 			return cell;
+		}
+
+		public override void RowSelected (UITableView tableView, NSIndexPath indexPath)
+		{
+			//DetailViewControllerRef.LanguageString = tVSource.LanguageNames[indexPath.Row];
+
+			base.RowSelected (tableView, indexPath);
 		}
 	}
 }
