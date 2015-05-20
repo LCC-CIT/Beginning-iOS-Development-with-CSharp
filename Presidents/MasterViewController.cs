@@ -9,9 +9,9 @@ namespace Presidents
 {
 	public partial class MasterViewController : UITableViewController
 	{
-		public DetailViewController DetailViewController { get; set; }
-
 		DataSource dataSource;
+
+		public DetailViewController DetailViewController { get; set; }
 
 		public MasterViewController (IntPtr handle) : base (handle)
 		{

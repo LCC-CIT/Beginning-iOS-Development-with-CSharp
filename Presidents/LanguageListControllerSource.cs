@@ -11,11 +11,14 @@ namespace Presidents
 		string[] languageNames = {"English", "French", "German", "Spanish"};
 		string[] languageCodes = {"en", "fr", "de", "es"};
 
+		readonly LanguageListControllerController controller;
+
 		public string[] LanguageNames {get{ return languageNames; }}
 		public string[] LanguageCodes {get{ return languageCodes; }}
 
-		public LanguageListControllerSource ()
+		public LanguageListControllerSource (LanguageListControllerController c)
 		{
+			controller = c;
 		}
 
 		public override nint NumberOfSections (UITableView tableView)
@@ -53,9 +56,7 @@ namespace Presidents
 
 		public override void RowSelected (UITableView tableView, NSIndexPath indexPath)
 		{
-			//DetailViewControllerRef.LanguageString = tVSource.LanguageNames[indexPath.Row];
-
-			base.RowSelected (tableView, indexPath);
+			controller.DetailViewControllerRef.LanguageString = languageCodes[indexPath.Row];
 		}
 	}
 }

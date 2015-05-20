@@ -8,7 +8,6 @@ namespace Presidents
 {
 	public class LanguageListControllerController : UITableViewController
 	{
-		LanguageListControllerSource tVSource = new LanguageListControllerSource ();
 
 		// iOS has the potential for "retain cycles"
 		// Mono's garbage collector might solve this though - don't know
@@ -33,6 +32,7 @@ namespace Presidents
 
 		public override void ViewDidLoad ()
 		{
+			LanguageListControllerSource tVSource = new LanguageListControllerSource (this);
 			// Register the TableView's data source
 			TableView.Source = tVSource;
 

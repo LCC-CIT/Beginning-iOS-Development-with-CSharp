@@ -19,13 +19,13 @@ namespace Presidents
 			get{ return languageString; }
 			set
 			{ 
+				languageString = value; 
 				ConfigureView ();
 				if (languagePopoverController != null) 
 				{
 					languagePopoverController.Dismiss (true);
 					languagePopoverController = null;
 				}
-				languageString = value; 
 			}
 		}
 
@@ -84,14 +84,17 @@ namespace Presidents
 							languageListController = new LanguageListControllerController();
 							languageListController.DetailViewControllerRef = this;
 
-							languagePopoverController = new UIPopoverController(languageListController);
-							languagePopoverController.PresentFromBarButtonItem(languageButton,
-								UIPopoverArrowDirection.Any, true);
-						}
-						else
-						{
-							languagePopoverController.Dismiss(true);
-							languagePopoverController = null;
+							if(languagePopoverController == null)
+							{
+								languagePopoverController = new UIPopoverController(languageListController);
+								languagePopoverController.PresentFromBarButtonItem(languageButton,
+									UIPopoverArrowDirection.Any, true);
+							}
+							else
+							{
+								languagePopoverController.Dismiss(true);
+								languagePopoverController = null;
+							}
 						}
 					});
 
@@ -115,7 +118,10 @@ namespace Presidents
 
 		private string ModifyUrlForlanguage(string url, string languageCode)
 		{
-			return url.Remove(7, 2).Insert(7, languageCode);
+			if (languageCode != "")
+				return url.Remove (7, 2).Insert (7, languageCode);
+			else
+				return url;
 		}
 	}
 }
