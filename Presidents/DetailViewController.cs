@@ -74,7 +74,7 @@ namespace Presidents
 
 			if(UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Pad)
 			{
-				languageButton = new UIBarButtonItem ("Choose Language", UIBarButtonItemStyle.Plain, this, ToggleLanguagePopover);
+				languageButton = new UIBarButtonItem ("Choose Language", UIBarButtonItemStyle.Plain, (s, e)=>{});
 				NavigationItem.RightBarButtonItem = languageButton;
 			}
 
@@ -87,9 +87,11 @@ namespace Presidents
 			// Release any cached data, images, etc that aren't in use.
 		}
 
-		private EventHandler ToggleLanguagPopover( object sender, EventArgs e)
-		{
-		}
+		/*
+		private EventHandler ToggleLanguagePopover = (s, e) => {
+			
+		};
+		*/
 
 		private string ModifyUrlForlanguage(string url, string languageCode)
 		{
