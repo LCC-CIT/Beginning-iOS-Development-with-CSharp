@@ -74,6 +74,11 @@
     <ImageAsset Include="Resources\Images.xcassets\singleicon.imageset\Contents.json" />
     <ImageAsset Include="Resources\Images.xcassets\singleicon.imageset\singleicon.png" />
     <ImageAsset Include="Resources\Images.xcassets\singleicon.imageset\singleicon%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\SettingsIcon.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\SettingsIcon%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\AppIcon-iPad.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\AppIcon-iPad%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\AppIcon-iPhone%402x.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
@@ -94,13 +99,15 @@
     <Compile Include="SecondViewController.designer.cs">
       <DependentUpon>SecondViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="Constants.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Resources\Images.xcassets\doubleicon.imageset\" />
     <Folder Include="Resources\Images.xcassets\singleicon.imageset\" />
+    <Folder Include="Settings.bundle\" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Root.plist" />
+    <BundleResource Include="Settings.bundle\Root.plist" />
   </ItemGroup>
 </Project>
