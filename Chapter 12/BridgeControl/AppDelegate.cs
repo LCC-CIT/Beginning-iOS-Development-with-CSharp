@@ -1,4 +1,5 @@
-﻿using Foundation;
+﻿using System.Collections.Generic;
+using Foundation;
 using UIKit;
 
 namespace BridgeControl
@@ -19,7 +20,15 @@ namespace BridgeControl
 		{
 			// Override point for customization after application launch.
 			// If not required for your application you can safely delete this method
+			//var defaults = new Dictionary<string, object>();
+			//NSDictionary defaults = new NSDictionary (new NSNumber(5), new NSString(Constants.WARP_FACTOR_KEY));
+			var defaults = new NSMutableDictionary ();
+			defaults.SetValueForKey(new NSNumber(true), new NSString(Constants.WARP_DRIVE_KEY));
+			defaults.SetValueForKey(new NSNumber(5), new NSString(Constants.WARP_FACTOR_KEY));
+			defaults.SetValueForKey(new NSString("Vulcan"), new NSString(Constants.FAVORITE_ALIEN_KEY));
 
+
+			NSUserDefaults.StandardUserDefaults.RegisterDefaults (defaults);
 
 
 			return true;
