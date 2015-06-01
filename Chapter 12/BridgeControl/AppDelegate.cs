@@ -21,10 +21,15 @@ namespace BridgeControl
 			// Override point for customization after application launch.
 			// If not required for your application you can safely delete this method
 
-			// Set default settings for this app
-			NSUserDefaults.StandardUserDefaults.SetBool (true, Constants.WARP_DRIVE_KEY);
-			NSUserDefaults.StandardUserDefaults.SetInt (5, Constants.WARP_FACTOR_KEY);
-			NSUserDefaults.StandardUserDefaults.SetString ("Vulcan", Constants.FAVORITE_ALIEN_KEY);
+
+			// Set default settings for this app, but only the first time it's run
+			bool? warpDriveOn = NSUserDefaults.StandardUserDefaults.BoolForKey (Constants.WARP_DRIVE_KEY);
+			if (warpDriveOn == null)
+			{
+				NSUserDefaults.StandardUserDefaults.SetBool (true, Constants.WARP_DRIVE_KEY);
+				NSUserDefaults.StandardUserDefaults.SetInt (5, Constants.WARP_FACTOR_KEY);
+				NSUserDefaults.StandardUserDefaults.SetString ("Vulcan", Constants.FAVORITE_ALIEN_KEY);
+			}
 
 			return true;
 		}

@@ -20,6 +20,10 @@ namespace BridgeControl
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton resetButton { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UIButton settingsButton { get; set; }
 
 		[Outlet]
@@ -29,6 +33,10 @@ namespace BridgeControl
 		[Action ("engineSwitch_ValueChanged:")]
 		[GeneratedCode ("iOS Designer", "1.0")]
 		partial void engineSwitch_ValueChanged (UISwitch sender);
+
+		[Action ("resetButton_TouchUpInside:")]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void resetButton_TouchUpInside (UIButton sender);
 
 		[Action ("settingsButton_TouchUpInside:")]
 		[GeneratedCode ("iOS Designer", "1.0")]
@@ -43,6 +51,10 @@ namespace BridgeControl
 			if (engineSwitch != null) {
 				engineSwitch.Dispose ();
 				engineSwitch = null;
+			}
+			if (resetButton != null) {
+				resetButton.Dispose ();
+				resetButton = null;
 			}
 			if (settingsButton != null) {
 				settingsButton.Dispose ();

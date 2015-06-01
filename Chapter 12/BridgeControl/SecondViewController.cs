@@ -27,6 +27,7 @@ namespace BridgeControl
 		{
 			var defaults = NSUserDefaults.StandardUserDefaults;
 			defaults.SetFloat(warpFactorSlider.Value, Constants.WARP_FACTOR_KEY);
+			defaults.Synchronize();		
 		}
 
 		partial void settingsButton_TouchUpInside (UIButton sender)
@@ -53,6 +54,15 @@ namespace BridgeControl
 			engineSwitch.On = defaults.BoolForKey (Constants.WARP_DRIVE_KEY);
 			warpFactorSlider.Value = defaults.FloatForKey (Constants.WARP_FACTOR_KEY);
 			defaults.Synchronize();
+		}
+
+		partial void resetButton_TouchUpInside (UIButton sender)
+		{
+			var defaults = NSUserDefaults.StandardUserDefaults;
+			defaults.SetNilValueForKey((NSString)Constants.WARP_DRIVE_KEY);
+			defaults.SetNilValueForKey((NSString)Constants.WARP_FACTOR_KEY);
+			defaults.SetNilValueForKey((NSString)Constants.FAVORITE_ALIEN_KEY);
+			defaults.
 		}
 	}
 }
