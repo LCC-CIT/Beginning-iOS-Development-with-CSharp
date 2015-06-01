@@ -23,13 +23,12 @@ namespace BridgeControl
 
 
 			// Set default settings for this app, but only the first time it's run
-			bool? warpDriveOn = NSUserDefaults.StandardUserDefaults.BoolForKey (Constants.WARP_DRIVE_KEY);
-			if (warpDriveOn == null)
-			{
-				NSUserDefaults.StandardUserDefaults.SetBool (true, Constants.WARP_DRIVE_KEY);
-				NSUserDefaults.StandardUserDefaults.SetInt (5, Constants.WARP_FACTOR_KEY);
-				NSUserDefaults.StandardUserDefaults.SetString ("Vulcan", Constants.FAVORITE_ALIEN_KEY);
-			}
+			var defaultsDictionary = new NSMutableDictionary();
+			defaultsDictionary.SetValueForKey ((NSNumber)1, (NSString)Constants.WARP_DRIVE_KEY);
+			defaultsDictionary.SetValueForKey ((NSNumber)5, (NSString)Constants.WARP_FACTOR_KEY);
+			defaultsDictionary.SetValueForKey ((NSString)"Vulcan", (NSString)Constants.FAVORITE_ALIEN_KEY);
+
+			NSUserDefaults.StandardUserDefaults.RegisterDefaults (defaultsDictionary);
 
 			return true;
 		}

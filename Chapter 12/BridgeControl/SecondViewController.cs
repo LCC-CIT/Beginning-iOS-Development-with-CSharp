@@ -58,11 +58,10 @@ namespace BridgeControl
 
 		partial void resetButton_TouchUpInside (UIButton sender)
 		{
-			var defaults = NSUserDefaults.StandardUserDefaults;
-			defaults.SetNilValueForKey((NSString)Constants.WARP_DRIVE_KEY);
-			defaults.SetNilValueForKey((NSString)Constants.WARP_FACTOR_KEY);
-			defaults.SetNilValueForKey((NSString)Constants.FAVORITE_ALIEN_KEY);
-			defaults.
+			NSUserDefaults.StandardUserDefaults.RemoveObject(Constants.WARP_DRIVE_KEY);
+			NSUserDefaults.StandardUserDefaults.RemoveObject(Constants.WARP_FACTOR_KEY);
+			NSUserDefaults.StandardUserDefaults.RemoveObject(Constants.FAVORITE_ALIEN_KEY);
+			RefreshFields();
 		}
 	}
 }
