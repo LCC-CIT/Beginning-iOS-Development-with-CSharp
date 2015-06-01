@@ -109,5 +109,8 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Settings.bundle\Root.plist" />
+    <BundleResource Include="Settings.bundle\rabbit.png" />
+    <BundleResource Include="Settings.bundle\turtle.png" />
+    <BundleResource Include="Settings.bundle\More.plist" />
   </ItemGroup>
 </Project>
