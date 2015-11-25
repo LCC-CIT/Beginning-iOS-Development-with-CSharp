@@ -1,5 +1,5 @@
 # Beginning-iOS-Development-with-CSharp
-The iOS apps in this repository were translated into C# from examples in the book *Beginning iOS Development with Swift*, 
+The iOS apps in this repository were translated into C# from examples in the book *Beginning iPhone Development with Swift*, 
 by David Mark , Jack Nutting , Kim Topley , Fredrik Olsson , Jeff LaMarche, and published by Apress in 2014.
 
 The code was written using Xamarin Studio and requires the Xamarin.iOS library and license.
