@@ -143,8 +143,8 @@
                             <constraint firstItem="130" firstAttribute="centerY" secondItem="115" secondAttribute="centerY" id="136"/>
                             <constraint firstAttribute="bottom" secondItem="130" secondAttribute="bottom" constant="20" id="137"/>
                             <constraint firstAttribute="trailing" secondItem="130" secondAttribute="trailing" constant="20" id="138"/>
-                            <constraint id="178" constant="55" firstItem="kh9-bI-dsS" firstAttribute="trailing" secondItem="172" secondAttribute="trailing"/>
                             <constraint id="179" constant="40" firstItem="172" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top"/>
+                            <constraint id="189" firstItem="172" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX"/>
                         </constraints>
                     </view>
                     <connections>
