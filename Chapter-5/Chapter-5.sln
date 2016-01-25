@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayoutDemo", "LayoutDemo\La
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestructureDemo", "RestructureDemo\RestructureDemo.csproj", "{3DC5973A-9699-44FB-B96D-164F2DA8B403}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orientations", "Orientations\Orientations.csproj", "{2175A65E-2F98-4F35-8644-79B93E90BFED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -15,6 +17,18 @@ Global
 		AppStore|iPhone = AppStore|iPhone
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2175A65E-2F98-4F35-8644-79B93E90BFED}.Ad-Hoc|iPhone.ActiveCfg = Release|iPhone
+		{2175A65E-2F98-4F35-8644-79B93E90BFED}.Ad-Hoc|iPhone.Build.0 = Release|iPhone
+		{2175A65E-2F98-4F35-8644-79B93E90BFED}.AppStore|iPhone.ActiveCfg = Release|iPhone
+		{2175A65E-2F98-4F35-8644-79B93E90BFED}.AppStore|iPhone.Build.0 = Release|iPhone
+		{2175A65E-2F98-4F35-8644-79B93E90BFED}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{2175A65E-2F98-4F35-8644-79B93E90BFED}.Debug|iPhone.Build.0 = Debug|iPhone
+		{2175A65E-2F98-4F35-8644-79B93E90BFED}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{2175A65E-2F98-4F35-8644-79B93E90BFED}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{2175A65E-2F98-4F35-8644-79B93E90BFED}.Release|iPhone.ActiveCfg = Release|iPhone
+		{2175A65E-2F98-4F35-8644-79B93E90BFED}.Release|iPhone.Build.0 = Release|iPhone
+		{2175A65E-2F98-4F35-8644-79B93E90BFED}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{2175A65E-2F98-4F35-8644-79B93E90BFED}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{3DC5973A-9699-44FB-B96D-164F2DA8B403}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
 		{3DC5973A-9699-44FB-B96D-164F2DA8B403}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
 		{3DC5973A-9699-44FB-B96D-164F2DA8B403}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
