@@ -10,6 +10,7 @@ namespace Orientations
 		{
 		}
 
+		// comment this method out to see the orientations enabled in info.plist
 		public override UIInterfaceOrientationMask GetSupportedInterfaceOrientations ()
 		{
 			return UIInterfaceOrientationMask.Portrait | UIInterfaceOrientationMask.LandscapeLeft;
