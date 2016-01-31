@@ -14,6 +14,10 @@ namespace ViewSwitcher
 	[Register ("SwitchingViewController")]
 	partial class SwitchingViewController
 	{
+		[Action ("SwitchViews:")]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void SwitchViews (UIBarButtonItem sender);
+
 		void ReleaseDesignerOutlets ()
 		{
 		}
