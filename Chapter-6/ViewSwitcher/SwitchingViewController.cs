@@ -57,17 +57,24 @@ namespace ViewSwitcher
 				blueViewController = Storyboard.InstantiateViewController("Blue") as BlueViewController;
 			}
 
+			UIView.BeginAnimations("View Flip");
+			UIView.SetAnimationDuration(0.4);
+			UIView.SetAnimationCurve(UIViewAnimationCurve.EaseInOut);
+
 			// Switch view controllers
 			if(blueViewController != null && blueViewController.View.Superview != null)
 			{
+				UIView.SetAnimationTransition(UIViewAnimationTransition.FlipFromRight, forView: View, cache:true);
 				yellowViewController.View.Frame = View.Frame;
 				SwitchViewController(blueViewController, yellowViewController);
 			}
 			else
 			{
+				UIView.SetAnimationTransition(UIViewAnimationTransition.FlipFromLeft, forView: View, cache: true);
 				blueViewController.View.Frame = View.Frame;
 				SwitchViewController(yellowViewController, blueViewController);
 			}
+			UIView.CommitAnimations();
 		}
 
 		private void SwitchViewController(UIViewController fromVC, UIViewController toVC)

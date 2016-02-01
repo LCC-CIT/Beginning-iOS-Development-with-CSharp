@@ -36,7 +36,7 @@ namespace ViewSwitcher
 		{
 			var alert = UIAlertController.Create(title: "Blue View Button Pressed", 
 				message: "You pressed the button ont he blue view", preferredStyle: UIAlertControllerStyle.Alert);
-			var action = UIAlertAction.Create(title: "Yep, I did", style: UIAlertActionStyle.Default, handler: null);
+			var action = UIAlertAction.Create(title: "Yup, I did", style: UIAlertActionStyle.Default, handler: null);
 			alert.AddAction(action);
 			PresentViewController(alert, animated: true, completionHandler: null);
 		}
