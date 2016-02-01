@@ -8,7 +8,12 @@ namespace ViewSwitcher
 {
 	public partial class BlueViewController : UIViewController
 	{
+		/*
 		public BlueViewController () : base ("BlueViewController", null)
+		{
+		} */
+
+		public BlueViewController (IntPtr handle) : base (handle)
 		{
 		}
 
@@ -25,6 +30,15 @@ namespace ViewSwitcher
 			base.ViewDidLoad ();
 			
 			// Perform any additional setup after loading the view, typically from a nib.
+		}
+
+		partial void BlueButton_TouchUpInside (UIButton sender)
+		{
+			var alert = UIAlertController.Create(title: "Blue View Button Pressed", 
+				message: "You pressed the button ont he blue view", preferredStyle: UIAlertControllerStyle.Alert);
+			var action = UIAlertAction.Create(title: "Yep, I did", style: UIAlertActionStyle.Default, handler: null);
+			alert.AddAction(action);
+			PresentViewController(alert, animated: true, completionHandler: null);
 		}
 	}
 }

@@ -11,22 +11,22 @@ using UIKit;
 
 namespace ViewSwitcher
 {
-	[Register ("BlueViewController")]
-	partial class BlueViewController
+	[Register ("YellowViewController")]
+	partial class YellowViewController
 	{
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UIButton blueButton { get; set; }
+		UIButton yellowButton { get; set; }
 
-		[Action ("BlueButton_TouchUpInside:")]
+		[Action ("YellowButton_TouchUpInside:")]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		partial void BlueButton_TouchUpInside (UIButton sender);
+		partial void YellowButton_TouchUpInside (UIButton sender);
 
 		void ReleaseDesignerOutlets ()
 		{
-			if (blueButton != null) {
-				blueButton.Dispose ();
-				blueButton = null;
+			if (yellowButton != null) {
+				yellowButton.Dispose ();
+				yellowButton = null;
 			}
 		}
 	}

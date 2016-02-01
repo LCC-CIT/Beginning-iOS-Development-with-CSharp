@@ -15,8 +15,14 @@ namespace ViewSwitcher
 			get { return UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Phone; }
 		}
 
+		/*
 		public SwitchingViewController ()
 			: base (UserInterfaceIdiomIsPhone ? "SwitchingViewController_iPhone" : "SwitchingViewController_iPad", null)
+		{
+		}
+		*/
+
+		public SwitchingViewController (IntPtr handle) : base (handle)
 		{
 		}
 
@@ -41,37 +47,44 @@ namespace ViewSwitcher
 
 		partial void SwitchViews (UIBarButtonItem sender)
 		{
-			// Create the new view controller, if it doesn't exist
-			if(yellowViewController.View.Superview == null)
+			// Create the new view controller, if it doesn't exist 
+			if(yellowViewController == null)
 			{
-				if(yellowViewController == null)
-				{
-					yellowViewController = Storyboard.InstantiateViewController("Yellow") as YellowViewController;
-				}
-				else if(blueViewController.View.Superview = null)
-				{
-					if(blueViewController == null)
-					{
-						Storyboard.InstantiateViewController("Blue") as BlueViewController;
-					}
-				}
+				yellowViewController = Storyboard.InstantiateViewController("Yellow") as YellowViewController;
+			}
+			else if(blueViewController == null)
+			{
+				blueViewController = Storyboard.InstantiateViewController("Blue") as BlueViewController;
 			}
 
 			// Switch view controllers
 			if(blueViewController != null && blueViewController.View.Superview != null)
 			{
 				yellowViewController.View.Frame = View.Frame;
-				// call switch view controller
+				SwitchViewController(blueViewController, yellowViewController);
 			}
 			else
 			{
-				//TODO: add code
+				blueViewController.View.Frame = View.Frame;
+				SwitchViewController(yellowViewController, blueViewController);
 			}
 		}
 
 		private void SwitchViewController(UIViewController fromVC, UIViewController toVC)
 		{
-			//TODO: Translate this method
+			if (fromVC != null) 
+			{
+				fromVC.WillMoveToParentViewController (null);
+				fromVC.View.RemoveFromSuperview ();
+				fromVC.RemoveFromParentViewController ();
+			}
+
+			if (toVC != null) 
+			{
+				this.AddChildViewController (toVC);
+				this.View.InsertSubview (toVC.View, atIndex: 0);
+				toVC.DidMoveToParentViewController (this);
+			}
 		}
 
 	}

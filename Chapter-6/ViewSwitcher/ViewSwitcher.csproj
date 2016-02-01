@@ -112,10 +112,10 @@
     <Compile Include="BlueViewController.designer.cs">
       <DependentUpon>BlueViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="YellowNavigationController.designer.cs">
+    <Compile Include="YellowViewController.cs" />
+    <Compile Include="YellowViewController.designer.cs">
       <DependentUpon>YellowViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="YellowViewController.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
