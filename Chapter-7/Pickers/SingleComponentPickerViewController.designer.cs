@@ -16,25 +16,25 @@ namespace Pickers
 	{
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UIButton testButton { get; set; }
+		UIButton selectButton { get; set; }
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UILabel testLabel { get; set; }
+		UIPickerView singlePicker { get; set; }
 
-		[Action ("testButton_TouchUpInside:")]
+		[Action ("SelectButton_TouchUpInside:")]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		partial void testButton_TouchUpInside (UIButton sender);
+		partial void SelectButton_TouchUpInside (UIButton sender);
 
 		void ReleaseDesignerOutlets ()
 		{
-			if (testButton != null) {
-				testButton.Dispose ();
-				testButton = null;
+			if (selectButton != null) {
+				selectButton.Dispose ();
+				selectButton = null;
 			}
-			if (testLabel != null) {
-				testLabel.Dispose ();
-				testLabel = null;
+			if (singlePicker != null) {
+				singlePicker.Dispose ();
+				singlePicker = null;
 			}
 		}
 	}
