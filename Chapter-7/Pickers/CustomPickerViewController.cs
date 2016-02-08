@@ -8,7 +8,7 @@ namespace Pickers
 {
 	public partial class CustomPickerViewController : UITabBarController
 	{
-		public CustomPickerViewController () : base ("CustomPickerViewController", null)
+		public CustomPickerViewController (IntPtr handle) : base (handle)
 		{
 		}
 

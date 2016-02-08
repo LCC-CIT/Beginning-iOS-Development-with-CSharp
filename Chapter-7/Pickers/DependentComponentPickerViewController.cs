@@ -8,7 +8,7 @@ namespace Pickers
 {
 	public partial class DependentComponentPickerViewController : UIViewController
 	{
-		public DependentComponentPickerViewController () : base ("DependentComponentPickerViewController", null)
+		public DependentComponentPickerViewController (IntPtr handle) : base (handle)
 		{
 		}
 

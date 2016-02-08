@@ -25,7 +25,7 @@ namespace Pickers
 			
 			// Perform any additional setup after loading the view, typically from a nib.
 			var date = new NSDate();
-			DatePicker.Date  = date;
+			datePicker.Date  = date;
 
 			base.ViewDidLoad ();
 		}
@@ -33,8 +33,8 @@ namespace Pickers
 
 		partial void selectButton_TouchUpInside (UIButton sender)
 		{
-			var date = DatePicker.Date;
-			var msg = String.Format("The date and time you selected is {0}", "Testing");
+			var date = datePicker.Date;
+			var msg = String.Format("The date and time you selected is {0}", date);
 
 
 			var  alert = UIAlertController.Create(

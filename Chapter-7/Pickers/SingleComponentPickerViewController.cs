@@ -8,7 +8,7 @@ namespace Pickers
 {
 	public partial class SingleComponentPickerViewController : UIViewController
 	{
-		public SingleComponentPickerViewController () : base ("SingleComponentPickerViewController", null)
+		public SingleComponentPickerViewController (IntPtr handle) : base (handle)
 		{
 		}
 

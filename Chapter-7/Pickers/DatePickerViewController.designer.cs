@@ -16,7 +16,7 @@ namespace Pickers
 	{
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UIDatePicker DatePicker { get; set; }
+		UIDatePicker datePicker { get; set; }
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
@@ -28,9 +28,9 @@ namespace Pickers
 
 		void ReleaseDesignerOutlets ()
 		{
-			if (DatePicker != null) {
-				DatePicker.Dispose ();
-				DatePicker = null;
+			if (datePicker != null) {
+				datePicker.Dispose ();
+				datePicker = null;
 			}
 			if (selectButton != null) {
 				selectButton.Dispose ();
