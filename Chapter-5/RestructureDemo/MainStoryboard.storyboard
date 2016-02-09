@@ -183,7 +183,6 @@
                                 <exclude reference="117"/>
                                 <exclude reference="lgg-c6-XYL"/>
                                 <exclude reference="HBk-fA-650"/>
-                                <exclude reference="135"/>
                                 <exclude reference="136"/>
                                 <exclude reference="UNA-wb-oBe"/>
                                 <exclude reference="137"/>
@@ -212,6 +211,7 @@
                                 <exclude reference="bAT-dZ-FnU"/>
                                 <exclude reference="h2j-P3-I22"/>
                                 <exclude reference="kLl-LK-9mY"/>
+                                <exclude reference="135"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">

@@ -6,14 +6,20 @@ using UIKit;
 
 namespace Pickers
 {
-	public partial class SingleComponentPickerViewController : UIViewController, IUIPickerViewDelegate, IUIPickerViewDataSource
+	public partial class SingleComponentPickerViewController : UIViewController, IUIPickerViewDataSource
 	{
 
-		private string[] characterNames	= {"Luke", "Leia", "Han", "Chewbecca", "Artoo", "Threepio", "Lando"};
+		private static string[] characterNames	= {"Luke", "Leia", "Han", "Chewbecca", "Artoo", "Threepio", "Lando"};
 
 		public SingleComponentPickerViewController (IntPtr handle) : base (handle)
 		{
 		}
+
+		/*
+		public SingleComponentPickerViewController() :base("SingleComponentPickerViewController", null)
+		{
+		}
+		*/
 
 		public override void DidReceiveMemoryWarning ()
 		{
@@ -25,9 +31,8 @@ namespace Pickers
 
 		public override void ViewDidLoad ()
 		{
+			singlePicker.Delegate = new SinglePickerViewDelegate();
 			base.ViewDidLoad ();
-			
-
 		}
 			
 
@@ -44,27 +49,30 @@ namespace Pickers
 		}
 
 
-		// Picker Data Source Methods
+		// Picker Data Source Methods - implementing IUIPickerViewDataSource
 
-		 public  int GetComponentCount(UIPickerView pickerView)  {
+		 public  nint GetComponentCount(UIPickerView pickerView)  {
 			return 1;
 		}
 
-		public  int GetRowsInComponent(UIPickerView pickerView, System.nint component) {
+		public  nint GetRowsInComponent(UIPickerView pickerView, nint component) {
 			return characterNames.GetLength(0);
 		}
 
-		// Picker delegate methods
-		/*
-		 * func pickerView(pickerView: UIPickerView,
-titleForRow row: Int,
-forComponent component: Int) -> String! {
-return characterNames[row]
-} */
-		
-		public string titleForRow(int row) {
-			return characterNames[row];
-		}
+		// Picker delegate methods - implementing IUIPickerViewDelegate
+		// https://developer.xamarin.com/api/type/MonoTouch.UIKit.IUIPickerViewDelegate/
+		// All the protocols in the original UIPickerViewDelegate are optional - so there isn't anything to implement
+		// Instead, we'll create an instance of UIPickerViewDelegate and assign it to the picker's Delegate property
+		class SinglePickerViewDelegate : UIPickerViewDelegate
+		{
+			public SinglePickerViewDelegate() {
+				// Just so I can put a breakpoint here
+			}
+
+			public override string GetTitle (UIPickerView pickerView, nint row, nint component)
+			{
+				return  SingleComponentPickerViewController.characterNames[row];
+			}
+		}	
 	}
 }
-
