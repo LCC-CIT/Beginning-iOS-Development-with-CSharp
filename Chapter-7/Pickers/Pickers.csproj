@@ -134,10 +134,6 @@
     <Compile Include="DatePickerViewController.designer.cs">
       <DependentUpon>DatePickerViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="SingleComponentPickerViewController.cs" />
-    <Compile Include="SingleComponentPickerViewController.designer.cs">
-      <DependentUpon>SingleComponentPickerViewController.cs</DependentUpon>
-    </Compile>
     <Compile Include="DoubleComponentPickerViewController.cs" />
     <Compile Include="DoubleComponentPickerViewController.designer.cs">
       <DependentUpon>DoubleComponentPickerViewController.cs</DependentUpon>
@@ -149,6 +145,10 @@
     <Compile Include="CustomPickerViewController.cs" />
     <Compile Include="CustomPickerViewController.designer.cs">
       <DependentUpon>CustomPickerViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SingleComponentPickerViewController.cs" />
+    <Compile Include="SingleComponentPickerViewController.designer.cs">
+      <DependentUpon>SingleComponentPickerViewController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
