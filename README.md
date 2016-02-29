@@ -9,31 +9,29 @@ CS235IM, Intermediate Mobile Applications Development: iOS.
 Read more about the class and find out how to enroll here:
 https://birdsbits.wordpress.com/2015/11/17/introductory-ios-app-development-course
 
-Directory of examples:
-======================
-Chapter 3: Handling Basic Interaction
-------------------------------------
+## Directory of examples:
+### Chapter 3: Handling Basic Interaction
+
 - ButtonFun
-Chapter 4: More User Interface Fun
----------------------------------
+### Chapter 4: More User Interface Fun
 - ControlFun
-Chapter 5: Rotation and Adaptive Layout
----------------------------------------
+
+### Chapter 5: Rotation and Adaptive Layout
 - LayoutDemo
 - Orientations
 - RestructureDemo
-Chapter 6: Multiview Applications
----------------------------------
+
+### Chapter 6: Multiview Applications
 - ViewSwitcher
-Chapter 7: Tab Bars and Pickers
--------------------------------
+
+### Chapter 7: Tab Bars and Pickers
 - Pickers
-Chapter 8: Introduction to Table Views
---------------------------------------
+
+### Chapter 8: Introduction to Table Views
 - SimpleTable
-Chapter 11: Using Split Views and Popovers
-------------------------------------------
+
+### Chapter 11: Using Split Views and Popovers
 - Presidents
-Chapter 12: Application Settings and User Defaults
---------------------------------------------------
+
+### Chapter 12: Application Settings and User Defaults
 - BridgeControl
