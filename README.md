@@ -28,10 +28,10 @@ https://birdsbits.wordpress.com/2015/11/17/introductory-ios-app-development-cour
 - Pickers
 
 ### Chapter 8: Introduction to Table Views
-- SimpleTable
+- SimpleTable (TableView, tapping a row pops up an alert)
 
 ### Chapter 11: Using Split Views and Popovers
-- Presidents
+- Presidents (Master-Detail app with SplitView for iPad)
 
 ### Chapter 12: Application Settings and User Defaults
 - BridgeControl
