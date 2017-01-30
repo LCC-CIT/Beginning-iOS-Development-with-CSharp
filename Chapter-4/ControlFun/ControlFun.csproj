@@ -93,13 +93,25 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
-    <ImageAsset Include="Resources\Images.xcassets\apress_logo.imageset\Contents.json" />
     <ImageAsset Include="apress_logo.png">
       <DependentUpon>MainStoryboard.storyboard</DependentUpon>
     </ImageAsset>
     <ImageAsset Include="Resources\blueButton.png" />
     <ImageAsset Include="Resources\whiteButton.png" />
+    <ImageAsset Include="Media.xcassets\Contents.json" />
+    <ImageAsset Include="Media.xcassets\apress_logo.imageset\Contents.json" />
+    <ImageAsset Include="Media.xcassets\apress_logo.imageset\apress_logo.png" />
+    <ImageAsset Include="Media.xcassets\apress_logo.imageset\apress_logo%402x.png" />
+    <ImageAsset Include="Media.xcassets\apress_logo.imageset\apress_logo%403x.png" />
+    <ImageAsset Include="Media.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Media.xcassets\AppIcon.appiconset\Bat-29.png" />
+    <ImageAsset Include="Media.xcassets\AppIcon.appiconset\Bat-58.png" />
+    <ImageAsset Include="Media.xcassets\AppIcon.appiconset\Bat-87.png" />
+    <ImageAsset Include="Media.xcassets\AppIcon.appiconset\Bat-80.png" />
+    <ImageAsset Include="Media.xcassets\AppIcon.appiconset\Bat-57.png" />
+    <ImageAsset Include="Media.xcassets\AppIcon.appiconset\Bat-114.png" />
+    <ImageAsset Include="Media.xcassets\AppIcon.appiconset\aPress-120.png" />
+    <ImageAsset Include="Media.xcassets\AppIcon.appiconset\Apress-180.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
@@ -119,8 +131,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <BundleResource Include="Resources\apress_logo.png" />
-    <BundleResource Include="Resources\apress_logo%402x.png" />
-    <BundleResource Include="Resources\apress_logo%403x.png" />
+    <Folder Include="Media.xcassets\apress_logo.imageset\" />
   </ItemGroup>
 </Project>
