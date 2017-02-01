@@ -93,9 +93,6 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="apress_logo.png">
-      <DependentUpon>MainStoryboard.storyboard</DependentUpon>
-    </ImageAsset>
     <ImageAsset Include="Resources\blueButton.png" />
     <ImageAsset Include="Resources\whiteButton.png" />
     <ImageAsset Include="Media.xcassets\Contents.json" />

@@ -82,7 +82,8 @@ namespace ControlFun
 				{ string msg = this.nameField.Text == ""
 					? "You can breath easy, everything went OK."
 					: "You can breath easy " + this.nameField.Text + " everything went OK.";
-			
+
+				// Controller within a controller
 				var cancelAction = UIAlertAction.Create("Phew!", UIAlertActionStyle.Cancel, null);
 
 				var controller2 = UIAlertController.Create("Something Was Done", msg, UIAlertControllerStyle.Alert);
