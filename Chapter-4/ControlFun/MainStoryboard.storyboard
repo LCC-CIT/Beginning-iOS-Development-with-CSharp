@@ -166,7 +166,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="apress_logo.png" width="172" height="80"/>
         <image name="blueButton.png" width="29" height="46"/>
         <image name="whiteButton.png" width="29" height="46"/>
         <image name="apress_logo" width="172" height="80"/>
