@@ -90,6 +90,7 @@
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
+    <None Include="sortednames.plist" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />

@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleTable", "SimpleTable.csproj", "{1023A596-5C25-4595-AE55-62B52637734B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1023A596-5C25-4595-AE55-62B52637734B}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{1023A596-5C25-4595-AE55-62B52637734B}.Debug|iPhone.Build.0 = Debug|iPhone
+		{1023A596-5C25-4595-AE55-62B52637734B}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{1023A596-5C25-4595-AE55-62B52637734B}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{1023A596-5C25-4595-AE55-62B52637734B}.Release|iPhone.ActiveCfg = Release|iPhone
+		{1023A596-5C25-4595-AE55-62B52637734B}.Release|iPhone.Build.0 = Release|iPhone
+		{1023A596-5C25-4595-AE55-62B52637734B}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{1023A596-5C25-4595-AE55-62B52637734B}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+EndGlobal
