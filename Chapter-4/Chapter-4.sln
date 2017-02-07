@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlFun", "ControlFun\ControlFun.csproj", "{D4D9B71D-A77D-41C7-8066-1A8EE0DA605D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlFun2016", "ControlFun2016\ControlFun2016.csproj", "{EE59A722-3E42-422C-822A-BC8687D0F9F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -25,5 +27,17 @@ Global
 		{D4D9B71D-A77D-41C7-8066-1A8EE0DA605D}.Release|iPhone.Build.0 = Release|iPhone
 		{D4D9B71D-A77D-41C7-8066-1A8EE0DA605D}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{D4D9B71D-A77D-41C7-8066-1A8EE0DA605D}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{EE59A722-3E42-422C-822A-BC8687D0F9F9}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{EE59A722-3E42-422C-822A-BC8687D0F9F9}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{EE59A722-3E42-422C-822A-BC8687D0F9F9}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{EE59A722-3E42-422C-822A-BC8687D0F9F9}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{EE59A722-3E42-422C-822A-BC8687D0F9F9}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{EE59A722-3E42-422C-822A-BC8687D0F9F9}.Debug|iPhone.Build.0 = Debug|iPhone
+		{EE59A722-3E42-422C-822A-BC8687D0F9F9}.Release|iPhone.ActiveCfg = Release|iPhone
+		{EE59A722-3E42-422C-822A-BC8687D0F9F9}.Release|iPhone.Build.0 = Release|iPhone
+		{EE59A722-3E42-422C-822A-BC8687D0F9F9}.Ad-Hoc|iPhone.ActiveCfg = Release|iPhone
+		{EE59A722-3E42-422C-822A-BC8687D0F9F9}.Ad-Hoc|iPhone.Build.0 = Release|iPhone
+		{EE59A722-3E42-422C-822A-BC8687D0F9F9}.AppStore|iPhone.ActiveCfg = Release|iPhone
+		{EE59A722-3E42-422C-822A-BC8687D0F9F9}.AppStore|iPhone.Build.0 = Release|iPhone
 	EndGlobalSection
 EndGlobal

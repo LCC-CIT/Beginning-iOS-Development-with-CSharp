@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Orientation Demo View Controller-->
@@ -16,87 +17,87 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="UL" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="7" misplaced="YES">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="UL" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="7">
                                 <rect key="frame" x="20" y="26" width="270" height="21"/>
-                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="1" blue="0" alpha="1"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="52"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <constraints>
-                                    <constraint id="52" firstAttribute="height" constant="21"/>
-                                </constraints>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="UR" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="44" misplaced="YES">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="UR" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="44">
                                 <rect key="frame" x="317" y="26" width="270" height="21"/>
-                                <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="1" blue="0" alpha="1"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="58"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <constraints>
-                                    <constraint id="58" firstAttribute="height" constant="21"/>
-                                </constraints>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="LL" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="45">
                                 <rect key="frame" x="20" y="559" width="42" height="21"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="61"/>
+                                    <constraint firstAttribute="height" constant="21" id="62"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <constraints>
-                                    <constraint id="61" firstAttribute="width" constant="42"/>
-                                    <constraint id="62" firstAttribute="height" constant="21"/>
-                                </constraints>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="LR" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="46">
                                 <rect key="frame" x="558" y="559" width="42" height="21"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="65"/>
+                                    <constraint firstAttribute="height" constant="21" id="66"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <constraints>
-                                    <constraint id="65" firstAttribute="width" constant="42"/>
-                                    <constraint id="66" firstAttribute="height" constant="21"/>
-                                </constraints>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Left" lineBreakMode="tailTruncation" minimumFontSize="10" id="70" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Left" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="70">
                                 <rect key="frame" x="20" y="290" width="42" height="21"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="79"/>
+                                    <constraint firstAttribute="height" constant="21" id="80"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <constraints>
-                                    <constraint id="79" firstAttribute="width" constant="42"/>
-                                    <constraint id="80" firstAttribute="height" constant="21"/>
-                                </constraints>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Right" lineBreakMode="tailTruncation" minimumFontSize="10" id="72" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Right" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="72">
                                 <rect key="frame" x="538" y="290" width="42" height="21"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="83"/>
+                                    <constraint firstAttribute="height" constant="21" id="84"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <constraints>
-                                    <constraint id="83" firstAttribute="width" constant="42"/>
-                                    <constraint id="84" firstAttribute="height" constant="21"/>
-                                </constraints>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint id="53" firstItem="7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
-                            <constraint id="54" constant="26" firstItem="7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top"/>
-                            <constraint id="55" firstItem="44" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="26"/>
-                            <constraint id="56" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="44" secondAttribute="trailing" constant="20"/>
-                            <constraint id="59" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="45" secondAttribute="bottom" constant="20"/>
-                            <constraint id="60" firstItem="45" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
-                            <constraint id="63" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="46" secondAttribute="bottom" constant="20"/>
-                            <constraint id="64" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="46" secondAttribute="trailing" constant="0.0"/>
-                            <constraint id="77" constant="20" firstItem="70" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading"/>
-                            <constraint id="81" constant="20" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="72" secondAttribute="trailing"/>
-                            <constraint firstItem="70" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="0.0" id="87"/>
-                            <constraint firstItem="72" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="0.0" id="88"/>
+                            <constraint firstItem="7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="53"/>
+                            <constraint firstItem="7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="26" id="54"/>
+                            <constraint firstItem="44" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="26" id="55"/>
+                            <constraint firstAttribute="trailing" secondItem="44" secondAttribute="trailing" constant="20" id="56"/>
+                            <constraint firstAttribute="bottom" secondItem="45" secondAttribute="bottom" constant="20" id="59"/>
+                            <constraint firstItem="45" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="60"/>
+                            <constraint firstAttribute="bottom" secondItem="46" secondAttribute="bottom" constant="20" id="63"/>
+                            <constraint firstAttribute="trailing" secondItem="46" secondAttribute="trailing" id="64"/>
+                            <constraint firstItem="70" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="77"/>
+                            <constraint firstAttribute="trailing" secondItem="72" secondAttribute="trailing" constant="20" id="81"/>
+                            <constraint firstItem="70" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="87"/>
+                            <constraint firstItem="72" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="88"/>
                             <constraint firstItem="44" firstAttribute="leading" secondItem="7" secondAttribute="trailing" constant="27" id="92"/>
-                            <constraint id="93" firstItem="44" firstAttribute="width" secondItem="7" secondAttribute="width" constant="0.0"/>
+                            <constraint firstItem="44" firstAttribute="width" secondItem="7" secondAttribute="width" id="93"/>
                         </constraints>
                     </view>
                 </viewController>
