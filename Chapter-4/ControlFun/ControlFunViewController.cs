@@ -54,13 +54,13 @@ namespace ControlFun
 			base.ViewWillDisappear (animated);
 		}
 
+
 		public override void ViewDidDisappear (bool animated)
 		{
 			base.ViewDidDisappear (animated);
 		}
 
-
-		partial void sliderLabel_ValueChanged (UISlider sender)
+		partial void numberSlider_ValueChanged(UISlider sender)
 		{
 			int progress = (int)sender.Value;
 			sliderLabel.Text = progress.ToString();
@@ -68,7 +68,7 @@ namespace ControlFun
 
 		partial void Switch_ValueChanged (UISwitch sender)
 		{
-			var setting = sender.On;
+			bool setting = sender.On;
 			leftSwitch.SetState(setting, true);
 			rightSwitch.SetState(setting, true);
 		}
