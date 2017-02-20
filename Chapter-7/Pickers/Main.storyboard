@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8">
+    <dependencies>
+>>>>>>> origin/master
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,11 +25,19 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
+<<<<<<< HEAD
                         <segue id="1482" destination="10" kind="relationship" relationship="viewControllers"/>
                         <segue id="1537" destination="1075" kind="relationship" relationship="viewControllers"/>
                         <segue id="1634" destination="29" kind="relationship" relationship="viewControllers"/>
                         <segue id="1717" destination="43" kind="relationship" relationship="viewControllers"/>
                         <segue id="1997" destination="36" kind="relationship" relationship="viewControllers"/>
+=======
+                        <segue destination="10" kind="relationship" relationship="viewControllers" id="1128"/>
+                        <segue destination="1075" kind="relationship" relationship="viewControllers" id="1198"/>
+                        <segue destination="29" kind="relationship" relationship="viewControllers" id="1231"/>
+                        <segue destination="43" kind="relationship" relationship="viewControllers" id="1288"/>
+                        <segue destination="36" kind="relationship" relationship="viewControllers" id="1341"/>
+>>>>>>> origin/master
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -90,6 +103,46 @@
             <point key="canvasLocation" x="231" y="330"/>
         </scene>
         <!--Single-->
+<<<<<<< HEAD
+=======
+        <scene sceneID="19">
+            <objects>
+                <viewController id="12" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5"/>
+                        <viewControllerLayoutGuide type="bottom" id="6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="20">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="721">
+                                <rect key="frame" x="277" y="220" width="46" height="30"/>
+                                <state key="normal" title="Select">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="SelectButton_TouchUpInside:" destination="12" eventType="touchUpInside" id="724"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="721" firstAttribute="centerX" secondItem="20" secondAttribute="centerX" id="722"/>
+                            <constraint firstAttribute="centerY" secondItem="721" secondAttribute="centerY" constant="65" id="723"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Single" image="singleicon" id="453"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="selectButton" destination="721" id="name-outlet-721"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="22" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-515" y="687"/>
+        </scene>
+>>>>>>> origin/master
         <!--Double-->
         <scene sceneID="28">
             <objects>
@@ -102,6 +155,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<<<<<<< HEAD
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double Component Picker - Not done yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1838" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" numberOfLines="2">
                                 <rect key="frame" x="20" y="45" width="220" height="50"/>
@@ -111,6 +165,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+=======
+>>>>>>> origin/master
                     </view>
                     <tabBarItem key="tabBarItem" title="Double" image="doubleicon" id="136"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -131,6 +187,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<<<<<<< HEAD
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom Picker - Not done yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1839" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" numberOfLines="2">
                                 <rect key="frame" x="20" y="55" width="129" height="50"/>
@@ -140,6 +197,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+=======
+>>>>>>> origin/master
                     </view>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <tabBarItem key="tabBarItem" title="Item" id="1843" image="toolicon"/>
@@ -160,6 +219,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<<<<<<< HEAD
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dependent Component Picker - Not done yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1840" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" numberOfLines="2">
                                 <rect key="frame" x="20" y="61" width="243" height="50"/>
@@ -169,6 +229,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+=======
+>>>>>>> origin/master
                     </view>
                     <tabBarItem key="tabBarItem" title="Dependent" image="dependenticon" id="176"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>

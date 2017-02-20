@@ -15,6 +15,7 @@ https://birdsbits.wordpress.com/2015/11/17/introductory-ios-app-development-cour
 
 ### Chapter 4: More User Interface Fun
 - ControlFun
+- ControlFun2016 (Based on the 3rd Edition of the book)
 
 ### Chapter 5: Rotation and Adaptive Layout
 - LayoutDemo
