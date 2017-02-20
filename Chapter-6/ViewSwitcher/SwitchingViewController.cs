@@ -40,14 +40,16 @@ namespace ViewSwitcher
 
 			// Create a BlueViewController object from the current storyboard
 			blueViewController = Storyboard.InstantiateViewController ("Blue") as BlueViewController;
-			blueViewController.View.Frame = View.Frame;
-
+			blueViewController.View.Frame = View.Frame; // Set the current frame to the Blue view
+			// The SwitchingViewController's Frame gets passed back and forth 
+			// between the Blue and Yellow View's frames. The Frame determines where the view get's
+			// displayed on the screen.
 		}
 
 
 		partial void SwitchViews (UIBarButtonItem sender)
 		{
-			// Create the new view controller, if it doesn't exist 
+			// Create the new view controller, only if it doesn't already exist 
 			if(yellowViewController == null)
 			{
 				yellowViewController = Storyboard.InstantiateViewController("Yellow") as YellowViewController;
@@ -61,7 +63,7 @@ namespace ViewSwitcher
 			UIView.SetAnimationDuration(0.4);
 			UIView.SetAnimationCurve(UIViewAnimationCurve.EaseInOut);
 
-			// Switch view controllers
+			// Switch frames, then switch view controllers
 			if(blueViewController != null && blueViewController.View.Superview != null)
 			{
 				UIView.SetAnimationTransition(UIViewAnimationTransition.FlipFromRight, forView: View, cache:true);

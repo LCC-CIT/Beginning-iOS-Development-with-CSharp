@@ -25,7 +25,14 @@ https://birdsbits.wordpress.com/2015/11/17/introductory-ios-app-development-cour
 - ViewSwitcher
 
 ### Chapter 7: Tab Bars and Pickers
-- Pickers
+- Pickers-- Demonstrates the use of:
+  - A tabbed app with a TabBarController and Segues for selecting one of five views, each with a different picker.
+  - Five types of PickerViews:
+      - Date
+      - Single Component
+      - Double Component (not done yet)
+      - Dependent Component (not done yet)
+      - Custom (not done yet)
 
 ### Chapter 8: Introduction to Table Views
 - SimpleTable (TableView, tapping a row pops up an alert)

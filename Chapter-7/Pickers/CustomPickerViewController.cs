@@ -6,7 +6,7 @@ using UIKit;
 
 namespace Pickers
 {
-	public partial class CustomPickerViewController : UITabBarController
+	public partial class CustomPickerViewController : UIViewController
 	{
 		public CustomPickerViewController (IntPtr handle) : base (handle)
 		{

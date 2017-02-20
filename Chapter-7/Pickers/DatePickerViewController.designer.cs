@@ -11,31 +11,32 @@ using UIKit;
 
 namespace Pickers
 {
-	[Register ("DatePickerViewController")]
-	partial class DatePickerViewController
-	{
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UIDatePicker datePicker { get; set; }
+    [Register ("DatePickerViewController")]
+    partial class DatePickerViewController
+    {
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIDatePicker datePicker { get; set; }
 
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UIButton selectButton { get; set; }
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton selectButton { get; set; }
 
-		[Action ("selectButton_TouchUpInside:")]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		partial void selectButton_TouchUpInside (UIButton sender);
+        [Action ("selectButton_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void selectButton_TouchUpInside (UIKit.UIButton sender);
 
-		void ReleaseDesignerOutlets ()
-		{
-			if (datePicker != null) {
-				datePicker.Dispose ();
-				datePicker = null;
-			}
-			if (selectButton != null) {
-				selectButton.Dispose ();
-				selectButton = null;
-			}
-		}
-	}
+        void ReleaseDesignerOutlets ()
+        {
+            if (datePicker != null) {
+                datePicker.Dispose ();
+                datePicker = null;
+            }
+
+            if (selectButton != null) {
+                selectButton.Dispose ();
+                selectButton = null;
+            }
+        }
+    }
 }
