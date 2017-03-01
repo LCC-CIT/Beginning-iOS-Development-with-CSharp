@@ -47,6 +47,7 @@ namespace SimpleTable
 
 
 	/********************* TableViewDataSource class *********************************/
+	// Note: not a nested class, just in the same file and namespace 
 
 	public class SimpleTableViewDataSource : UITableViewDataSource 
 	{

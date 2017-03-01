@@ -44,41 +44,13 @@
                             <outlet property="delegate" destination="29" id="32"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <segue destination="75" kind="show" identifier="DwarfDetailSegue" id="190"/>
-                    </connections>
+                    <connections/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="35" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="40" y="27"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="74">
-            <objects>
-                <viewController restorationIdentifier="detail" storyboardIdentifier="detail" id="75" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="72"/>
-                        <viewControllerLayoutGuide type="bottom" id="73"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="76">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Dwarf detail" translatesAutoresizingMaskIntoConstraints="NO" id="192">
-                                <rect key="frame" x="188" y="125" width="308" height="240"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="77" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="807" y="35"/>
-        </scene>
     </scenes>
     <resources>
         <image name="Images/star.png" width="22" height="22"/>
