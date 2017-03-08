@@ -16,11 +16,13 @@ namespace Presidents
 		}
 
 		public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
-		{
-			// Override point for customization after application launch.
+		{ 
+			// Assign the SplitViewController's DisplayModeButtonItem to the left button of the DetailViewController.
 			var splitViewController = (UISplitViewController)Window.RootViewController;
-			var navigationController = (UINavigationController)splitViewController.ViewControllers [1];
+			var navigationController = (UINavigationController)splitViewController.ViewControllers [1]; // The Detail ViewController is at index 1
 			navigationController.TopViewController.NavigationItem.LeftBarButtonItem = splitViewController.DisplayModeButtonItem;
+
+			// Set the SplitViewController's delegate to this AppDelegate so that the SplitViewController can call CollapseSecondViewController
 			splitViewController.WeakDelegate = this;
 
 			return true;
