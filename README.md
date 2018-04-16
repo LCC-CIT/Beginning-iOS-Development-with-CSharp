@@ -11,7 +11,7 @@ https://birdsbits.wordpress.com/2015/11/17/introductory-ios-app-development-cour
 
 ## Directory of examples:
 ### Chapter 3: Handling Basic Interaction
-- ButtonFun
+- ButtonFun - has four buttons and a label using aboslute positioning
 
 ### Chapter 4: More User Interface Fun
 - ControlFun
