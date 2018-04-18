@@ -34,7 +34,7 @@ namespace ControlFun2016
 			numberField.ResignFirstResponder();
 		}
 
-		partial void sliderLabel_ValueChanged(UISlider sender)
+		partial void numberSlider_ValueChanged(UISlider sender)
 		{
 			int progress = (int)sender.Value;
 			sliderLabel.Text = progress.ToString();

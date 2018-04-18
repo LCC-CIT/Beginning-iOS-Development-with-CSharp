@@ -54,13 +54,13 @@ namespace ControlFun2016
         [GeneratedCode ("iOS Designer", "1.0")]
         partial void doSomethingButton_TouchUpInside (UIKit.UIButton sender);
 
+        [Action ("numberSlider_ValueChanged:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void numberSlider_ValueChanged (UIKit.UISlider sender);
+
         [Action ("OnTapGestureRecognized:")]
         [GeneratedCode ("iOS Designer", "1.0")]
         partial void OnTapGestureRecognized (UIKit.UITapGestureRecognizer sender);
-
-        [Action ("sliderLabel_ValueChanged:")]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        partial void sliderLabel_ValueChanged (UIKit.UISlider sender);
 
         [Action ("Switch_ValueChanged:")]
         [GeneratedCode ("iOS Designer", "1.0")]

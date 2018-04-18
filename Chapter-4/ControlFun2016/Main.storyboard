@@ -67,7 +67,7 @@
                                     <constraint firstAttribute="height" constant="31" id="72"/>
                                 </constraints>
                                 <connections>
-                                    <action selector="sliderLabel_ValueChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="73"/>
+                                    <action selector="numberSlider_ValueChanged:" destination="vXZ-lx-hvc" id="514" eventType="valueChanged"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="50" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="75">
