@@ -17,3 +17,5 @@ UpgradeLog.*
 *.nib
 *.pfx
 *.zip
+
+Chapter-4/.vs/Chapter-4/xs/UserPrefs.xml
