@@ -1,8 +1,7 @@
 ﻿<Properties StartupConfiguration="{EE59A722-3E42-422C-822A-BC8687D0F9F9}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="ControlFun2016/Main.storyboard">
     <Files>
-      <File FileName="ControlFun2016/ControlFunViewController.cs" Line="49" Column="9" />
-      <File FileName="ControlFun2016/LaunchScreen.storyboard" />
+      <File FileName="ControlFun2016/ControlFunViewController.cs" Line="37" Column="28" />
       <File FileName="ControlFun2016/Main.storyboard" />
     </Files>
   </MonoDevelop.Ide.Workbench>
@@ -13,5 +12,5 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.ControlFun2016 PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.494D42C1-1F1F-4E72-A3C9-BCE82CFBC31A" HideGettingStarted="True" automaticSigning="False" />
+  <MonoDevelop.Ide.ItemProperties.ControlFun2016 PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7469F808-56C5-436C-924F-1F1334D7FFC2" HideGettingStarted="True" automaticSigning="False" />
 </Properties>
