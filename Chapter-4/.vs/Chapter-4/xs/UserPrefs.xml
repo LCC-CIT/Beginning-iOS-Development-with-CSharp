@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{EE59A722-3E42-422C-822A-BC8687D0F9F9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ControlFun2016/Main.storyboard">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ControlFun/ControlFunViewController.cs">
     <Files>
-      <File FileName="ControlFun2016/ControlFunViewController.cs" Line="37" Column="28" />
+      <File FileName="ControlFun2016/ControlFunViewController.cs" Line="35" Column="4" />
       <File FileName="ControlFun2016/Main.storyboard" />
+      <File FileName="ControlFun/ControlFunViewController.cs" Line="38" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />

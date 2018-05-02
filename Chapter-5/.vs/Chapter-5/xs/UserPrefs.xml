@@ -1,6 +1,10 @@
 ﻿<Properties StartupConfiguration="{3DC5973A-9699-44FB-B96D-164F2DA8B403}|Default">
   <MonoDevelop.Ide.ItemProperties.RestructureDemo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.494D42C1-1F1F-4E72-A3C9-BCE82CFBC31A" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RestructureDemo/MainStoryboard.storyboard">
+    <Files>
+      <File FileName="RestructureDemo/MainStoryboard.storyboard" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
