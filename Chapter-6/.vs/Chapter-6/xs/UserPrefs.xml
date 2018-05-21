@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{5DAEF0A6-777F-41C2-BBA1-3C6731DF5144}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ViewSwitcher/SwitchingViewController.cs">
+    <Files>
+      <File FileName="ViewSwitcher/SwitchingViewController.cs" Line="75" Column="28" />
+      <File FileName="ViewSwitcher/Main.cs" Line="1" Column="1" />
+      <File FileName="ViewSwitcher/BlueViewController.cs" Line="1" Column="1" />
+      <File FileName="ViewSwitcher/YellowViewController.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.ViewSwitcher PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.494D42C1-1F1F-4E72-A3C9-BCE82CFBC31A" />
+</Properties>
