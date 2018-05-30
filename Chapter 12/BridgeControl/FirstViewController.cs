@@ -1,5 +1,4 @@
 ﻿using System;
-
 using UIKit;
 using Foundation;
 
@@ -48,7 +47,7 @@ namespace BridgeControl
 
 		private void RefreshFields()
 		{
-			var defaults = NSUserDefaults.StandardUserDefaults;
+			NSUserDefaults defaults = NSUserDefaults.StandardUserDefaults;
 
 			officerLabel.Text = defaults.StringForKey (Constants.OFFICER_KEY);
 			authorizationCodeLabel.Text = defaults.StringForKey (Constants.AUTHORIZATION_CODE_KEY);
