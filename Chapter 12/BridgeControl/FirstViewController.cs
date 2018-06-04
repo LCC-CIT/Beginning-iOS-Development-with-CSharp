@@ -47,6 +47,11 @@ namespace BridgeControl
 
 		private void RefreshFields()
 		{
+			// Note that in this context, UserDefaults means settings that
+            // were set by the user, or defaults registerd in code, NOT
+            // defaults from the settings bundle!
+            // The defaults were registerd in AppDelegate.FinishedLaunching
+
 			NSUserDefaults defaults = NSUserDefaults.StandardUserDefaults;
 
 			officerLabel.Text = defaults.StringForKey (Constants.OFFICER_KEY);

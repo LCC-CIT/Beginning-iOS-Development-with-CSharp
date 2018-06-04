@@ -1,15 +1,19 @@
 ﻿<Properties StartupConfiguration="{A826F335-3875-43E7-B7A2-66248DF3EC57}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BridgeControl/Settings.bundle/Root.plist">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BridgeControl/AppDelegate.cs">
     <Files>
-      <File FileName="BridgeControl/FirstViewController.cs" Line="1" Column="14" />
+      <File FileName="BridgeControl/FirstViewController.cs" Line="48" Column="31" />
       <File FileName="BridgeControl/Settings.bundle/Root.plist" />
       <File FileName="BridgeControl/Settings.bundle/More.plist" />
       <File FileName="BridgeControl/Main.storyboard" />
+      <File FileName="BridgeControl/AppDelegate.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Volumes/DataCard/Repos/Beginning-iOS-Development-with-CSharp/Chapter 12/BridgeControl/FirstViewController.cs" relfile="BridgeControl/FirstViewController.cs" line="68" column="1" />
+      <Breakpoint file="/Volumes/DataCard/Repos/Beginning-iOS-Development-with-CSharp/Chapter 12/BridgeControl/FirstViewController.cs" relfile="BridgeControl/FirstViewController.cs" line="55" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.BridgeControl PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.494D42C1-1F1F-4E72-A3C9-BCE82CFBC31A" HideGettingStarted="True" />

@@ -27,6 +27,7 @@ namespace BridgeControl
 			defaultsDictionary.SetValueForKey ((NSNumber)1, (NSString)Constants.WARP_DRIVE_KEY);
 			defaultsDictionary.SetValueForKey ((NSNumber)5, (NSString)Constants.WARP_FACTOR_KEY);
 			defaultsDictionary.SetValueForKey ((NSString)"Vulcan", (NSString)Constants.FAVORITE_ALIEN_KEY);
+			defaultsDictionary.SetValueForKey ((NSString)"Ensign", (NSString)Constants.RANK_KEY);
 
 			NSUserDefaults.StandardUserDefaults.RegisterDefaults (defaultsDictionary);
 
